@@ -9,6 +9,9 @@ import { ContactPage } from '../pages/contact/contact';
 import { CvPage } from '../pages/cv/cv';
 import { AboutPage } from '../pages/about/about';
 
+/**
+ * Claire Gizard - 1106363
+ */
 @Component({
   templateUrl: 'app.html'
 })

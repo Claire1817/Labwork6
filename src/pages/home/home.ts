@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-
+/**
+ * Claire Gizard - 1106363
+ */
 @Component({
   selector: 'page-home',
   templateUrl: 'home.html'

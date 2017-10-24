@@ -5,12 +5,8 @@ import { AboutPage } from '../about/about';
 import { User } from '../../app/models/User';
 
 /**
- * Generated class for the RegisterPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
+ * Claire Gizard - 1106363
  */
-
 @IonicPage()
 @Component({
   selector: 'page-register',

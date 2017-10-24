@@ -22,7 +22,9 @@ var firebaseConfig = {
   storageBucket: "labwork5-bfcb8.appspot.com",
   messagingSenderId: "625626025533"
 };
-
+/**
+ * Claire Gizard - 1106363
+ */
 @NgModule({
   declarations: [
     MyApp,
