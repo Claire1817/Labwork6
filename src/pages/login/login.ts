@@ -15,7 +15,6 @@ export class LoginPage {
   user = {} as User;
   
     constructor(private afAuth: AngularFireAuth, private nav: NavController, public navParams: NavParams) {
-   //   this.nav.setRoot(LoginPage);
      }
    
     public createAccount() {
@@ -23,7 +22,12 @@ export class LoginPage {
     }
    
     async login(user: User) {
-      
+        
+    /**
+     * Call to the database for the connection
+     * of an account
+     * send the email and the password
+     */
       try {
         const result = this.afAuth.auth.signInWithEmailAndPassword(user.email, user.password);
         console.log(result);
@@ -31,6 +35,10 @@ export class LoginPage {
           this.nav.setRoot(AboutPage);        
         }
       } catch (e) {
+      /**
+       * catch the errors if the database call
+       * fail
+       */
         console.log(e);
       }
     }

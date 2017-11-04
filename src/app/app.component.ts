@@ -25,7 +25,7 @@ export class MyApp {
   constructor(public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     this.initializeApp();
 
-    // used for an example of ngFor and navigation
+    // used to have a menu in the appbar
     this.pages = [
       { title: 'About', component: AboutPage},      
       { title: 'Contact', component: ContactPage},

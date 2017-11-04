@@ -20,12 +20,21 @@ export class RegisterPage {
   
   async register(user: User) { 
      
+    /**
+     * Call to the database for the registration
+     * of an account
+     * send the email and the password
+     */
     try { 
     const result =  await this.aFAuth.auth.createUserWithEmailAndPassword(user.email, user.password); 
     this.nav.setRoot(AboutPage);    
     console.log(result); 
   }  
-    catch(e) { 
+    catch(e) {
+      /**
+       * catch the errors if the database call
+       * fail
+       */
       this.toast.create({ 
         message: 'Error:', 
         duration: 3000 
