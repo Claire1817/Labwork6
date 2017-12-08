@@ -8,6 +8,7 @@ import { HomePage } from '../pages/home/home';
 import { ContactPage } from '../pages/contact/contact';
 import { CvPage } from '../pages/cv/cv';
 import { AboutPage } from '../pages/about/about';
+import { SkillPage } from '../pages/skill/skill';
 
 /**
  * Claire Gizard - 1106363
@@ -29,7 +30,8 @@ export class MyApp {
     this.pages = [
       { title: 'About', component: AboutPage},      
       { title: 'Contact', component: ContactPage},
-      { title: 'CV', component: CvPage}
+      { title: 'CV', component: CvPage},
+      { title: 'Skills', component: SkillPage}
     ];
 
   }

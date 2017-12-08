@@ -13,6 +13,7 @@ import { AngularFireModule } from 'angularfire2';
 import { AboutPage } from '../pages/about/about';
 import { CvPage } from '../pages/cv/cv';
 import { ContactPage } from '../pages/contact/contact';
+import { SkillPage } from '../pages/skill/skill';
 
 var firebaseConfig = {
   apiKey: "AIzaSyDHXPOevL35ZPZx25lrrhMTeMgpmlRv3Bs",
@@ -32,7 +33,8 @@ var firebaseConfig = {
     LoginPage,
     AboutPage,
     CvPage,
-    ContactPage
+    ContactPage,
+    SkillPage
   ],
   imports: [
     BrowserModule,
@@ -47,7 +49,8 @@ var firebaseConfig = {
     LoginPage,
     AboutPage,
     CvPage,
-    ContactPage
+    ContactPage,
+    SkillPage
   ],
   providers: [
     StatusBar,
